@@ -8,8 +8,16 @@ body {
 
 .link {
     text-decoration: none;
+    color: #212121;  
 }
 
+.link:hover, .link:focus {
+    color: #2196F3;
+}
+.button-link:hover, .button-list:focus {
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
 /*---Logo---*/
 
 .logo, list {
@@ -35,7 +43,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    
 }
 .header-mail {
     font-weight: 500;
@@ -166,4 +174,33 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+
+/*---Portfolio---*/
+.button-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;   
+    color: #212121;
+    cursor: pointer;
+
+}
+
+
+/*---Portfolio-sectiopn---*/
+.project-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;   
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+.project-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: #757575;
 }
