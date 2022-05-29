@@ -34,6 +34,7 @@ body {
 color: var(--accent-color)
 }
 
+
 .button-link:hover, .button-link:focus {
     color: var(--main-bg-color);
     background-color: var(--accent-color)
@@ -43,7 +44,6 @@ color: var(--accent-color)
 
 .logo, list {
     font-family: 'Raleway';
-
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -86,6 +86,7 @@ color: var(--accent-color)
 /*----section----*/
 
 .section-caption {
+    font-family: inherit
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -109,6 +110,9 @@ color: var(--accent-color)
     cursor: pointer;
 }
 
+.section-button:hover, .section-button:focus {
+    background-color: #188CE8;
+}
 /*---section-second---*/
 
 .section-caption-text {
@@ -204,7 +208,9 @@ color: var(--accent-color)
     color: rgba(255, 255, 255, 0.6);
 }
 
+
 .button-link {
+    font-family: inherit
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
