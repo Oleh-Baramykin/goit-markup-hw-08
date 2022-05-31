@@ -84,6 +84,9 @@ color: var(--accent-color)
 
 /*----section----*/
 
+.section {
+background-color: #2F303A;
+}
 .section-caption {
     
     font-weight: 900;
