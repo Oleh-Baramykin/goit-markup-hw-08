@@ -5,11 +5,38 @@
 --accent-color:#2196F3;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+} 
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: roboto, sans-serif;
 }
 .project-title {
     text-decoration: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    border: 1px solid teal;
 }
 
 .visually-hidden {
@@ -26,18 +53,20 @@ body {
 }
 
 .list {list-style: none;
+    margin-left: auto;
 }
 
 .section-not {
     text-decoration: none;
 }
 .link {
+    display: block;
     text-decoration: none;
     color:var(--main-color-font)
 }
 
 .link:hover, .link:focus {
-color: var(--accent-color)
+    color: var(--accent-color)
 }
 
 
@@ -45,6 +74,13 @@ color: var(--accent-color)
     color: var(--main-bg-color);
     background-color: var(--accent-color)
 }
+
+.header-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 /*---Logo---*/
 
@@ -55,6 +91,7 @@ color: var(--accent-color)
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--accent-color);
+    padding: 24px 93px 25px 215px;
 }
 
 .logo-web  {
@@ -72,21 +109,49 @@ color: var(--accent-color)
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-color-font);
+    margin-right: 50px;
+}
+
+.header-list .header-text:last-child {
+    margin-right: 0;
+}
+.header-list .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-mail {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color:var(--secondary-color-font)
+    border: 1px solid teal
 }
+
+.conthead {
+    display: flex;
+}
+
+.conthead .list + .list {
+    margin-left: 50px;
+}
+.container {
+    display: flex;
+    width: 1200px;
+}
+
 
 /*----section----*/
 
 .section {
 background-color: #2F303A;
 }
+
 .section-caption {
     
     font-weight: 900;
