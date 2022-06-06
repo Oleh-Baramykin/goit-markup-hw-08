@@ -27,6 +27,12 @@ body {
     font-family: roboto, sans-serif;
     width: 1600px;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .project-title {
     text-decoration: none;
 }
@@ -392,18 +398,25 @@ border-radius: 0px 0px 4px 4px;
 }
 
 /*---Portfolio-section---*/
-
-
-
+.flex-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 94px;
+}
+.flex-button .button-list +.button-list {
+    margin-left: 8px;
+}
 .project-title {
+    margin: 20px 24px 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;   
     letter-spacing: 0.06em;
     color: var(--main-color-font)
 }
-
 .project-text {
+    padding: 0 24px 20px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
@@ -411,3 +424,23 @@ border-radius: 0px 0px 4px 4px;
     color: var(--secondary-color-font)
 }
 
+.button-link {
+    padding: 6px 22px;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+}
+.section-projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 94px;
+}
