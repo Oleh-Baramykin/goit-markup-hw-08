@@ -84,7 +84,6 @@ img {
 }
 
 
-
 /*---Logo---*/
 
 .logo, list {
@@ -93,7 +92,7 @@ img {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--accent-color);
+    color: #000000;
     padding: 24px 0 25px 0;
 }
 
@@ -102,7 +101,7 @@ img {
     font-size: 26px;
     line-height: 1.19;   
     letter-spacing: 0.03em;
-    color: #000000;
+    color: var(--accent-color)
 }
 
 /*----header---*/
@@ -343,6 +342,7 @@ background: #F5F4FA;;
 .logo-link {
     padding: 0;
     margin-bottom: 20px;
+    color: var(--accent-color);
 }
 
 
@@ -405,8 +405,6 @@ background: #F5F4FA;;
     margin-left: 8px;
 }
 .project-title {
-    padding: 20px 24px 0;
-    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;   
@@ -414,7 +412,7 @@ background: #F5F4FA;;
     color: var(--main-color-font)
 }
 .project-text {
-    padding: 0 24px 20px;
+    margin-top: 4px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
@@ -442,6 +440,7 @@ background: #F5F4FA;;
     gap: 30px;
 }
 .border {
+    padding: 20px 24px;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
