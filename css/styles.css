@@ -105,7 +105,10 @@ img {
     color: var(--accent-color)
 }
 
-/*----header---*/
+/*header*/
+
+
+
 .headers {
 display: flex;
 align-items: center;
@@ -229,6 +232,7 @@ padding: 94px 0;
 .section-button:hover, .section-button:focus {
     background-color: #188CE8;
 }
+
 /*---section-second---*/
 
 .section-content{
@@ -266,7 +270,9 @@ padding-left: 0;
 .section-text:not(:last-child) {
     margin-right: 0;
 }
+
 /*---section third--*/
+
 .title {
     margin-bottom: 50px;
     font-weight: 700;
@@ -286,6 +292,7 @@ display: flex;
 
 
 /*---section-team---*/
+
 .section-team {
     background: #F5F4FA;
 }
@@ -367,12 +374,12 @@ background: #F5F4FA;;
 .soc-links {
     display: flex;
     justify-content: center;
+    margin: 0 32px 30px;
 }
 .social-links {
     width: 44px;
     height: 44px;
-    margin-left: 10px;
-    margin-bottom: 30px;    
+    margin-left: 10px;   
 }
 .social-links:first-child {
     margin-left: 0;
@@ -381,6 +388,22 @@ background: #F5F4FA;;
 
 
 /*----footer----*/
+.footer-title {
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-left: 301px;
+
+}
+
 .footer {
     padding: 60px 0;
     background: #2F303A;
@@ -445,8 +468,16 @@ background: #F5F4FA;;
     font-style: normal;
 }
 
+.footer-links {
+    display: flex;
+}
+.footer-soc-links {
+    display: flex;
+}
+
 
 /*---Portfolio-section---*/
+
 .flex-button {
     display: flex;
     justify-content: center;
