@@ -461,7 +461,7 @@ background: #F5F4FA;;
 
 .link-clients:hover,
 .link-clients:focus {
-    border: 1px solid var(--accent-color);
+    border-color: var(--accent-color);
     color: var(--accent-color);
 }
 
