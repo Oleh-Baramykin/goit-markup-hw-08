@@ -3,6 +3,7 @@
 --secondary-color-font: #757575;
 --main-bg-color: #ffffff;
 --accent-color:#2196F3;
+--time-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 p,
@@ -63,11 +64,11 @@ img {
 .section-not {
     text-decoration: none;
 }
-.link {
-    
+.link {    
     display: block;
     text-decoration: none;
-    color:var(--main-color-font)
+    color:var(--main-color-font);
+    transition: color 250ms var(--time-function);
 }
 
 .link:hover, .link:focus {
