@@ -46,7 +46,7 @@
             <div class="overlay">
                 <div class="container flex">
                     <h1 class="section-caption">Эффективные решения для вашего бизнеса</h1>
-                    <button type="button" class="section-button">Заказать услугу</button>
+                    <button type="button" class="section-button" data-modal-open>Заказать услугу</button>
                 </div>
             </div>
         </section>
@@ -97,9 +97,21 @@
             <div class="container">
                 <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="title-list">
-                    <li class="title-img list"><img src="./images/box-1.jpg" alt="печатать на клавиатуре" width="370" height="294"></li>
-                    <li class="title-img list"><img src="./images/img-22.jpg" alt="ноутбук и телефон" width="370" height="294"></li>
-                    <li class="title-img list"><img src="./images/img-11.jpg" alt="планшет" width="370" height="294"></li>
+                    <li class="title-img list"><img src="./images/box-1.jpg" alt="печатать на клавиатуре" width="370" height="294">
+                        <div class="title-name">
+                            <h3 class="desc">Десктопные приложения</h3>
+                        </div>
+                    </li>
+                    <li class="title-img list"><img src="./images/img-22.jpg" alt="ноутбук и телефон" width="370" height="294">
+                        <div class="title-name">
+                            <h3 class="desc">Мобильные приложения</h3>
+                        </div>
+                    </li>
+                    <li class="title-img list"><img src="./images/img-11.jpg" alt="планшет" width="370" height="294">
+                        <div class="title-name">
+                            <h3 class="desc">Дизайнерские решения</h3>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -348,6 +360,16 @@
             </div>
         </div>
         
-    </footer>      
+    </footer>    
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>
+                <svg width="30" height="30">
+                    <use href="./images/icons.svg (1).svg#icon-close-black-18dp-2-1"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
