@@ -393,9 +393,8 @@ margin-left: 30px;
     border-radius: 50%;
     background-color: #FFFFFF;
     color: #AFB1B8;
-    transition: transform 250ms var(--time-function);
+    transition: transform 250ms var(--time-function), background-color 250ms var(--time-function), color 250ms var(--time-function);
 }
-
 
 .social-links-ikon {
     fill: currentColor;
@@ -485,7 +484,7 @@ background: #F5F4FA;;
     color:  #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    transition: transform 250ms var(--time-function);
+    transition: transform 250ms var(--time-function), color 250ms var(--time-function), border-color 250ms var(--time-function);
 }        
 .social-link-clients {
     width: 170px;
@@ -597,18 +596,6 @@ background: #F5F4FA;;
     color: rgba(255, 255, 255, 0.6);
 }
 
-
-.button-link {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;   
-    color: var(--main-color-font);
-    cursor: pointer;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .contacts {
     font-style: normal;
 }
@@ -629,7 +616,7 @@ background: #F5F4FA;;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     color: #ffffff;
-    transition: transform 250ms var(--time-function);
+    transition: transform 250ms var(--time-function), background-color 250ms var(--time-function);
 }
 
 .social-links-footer:hover, 
@@ -637,6 +624,8 @@ background: #F5F4FA;;
     background-color: var(--accent-color);
     transform: scale(1.2);
 }
+
+
 
 /*---Portfolio-section---*/
 .desc-text {
@@ -653,12 +642,12 @@ background: #F5F4FA;;
     line-height: 28px;
     letter-spacing: 0.03em;
     color: #ffffff; 
-    background-color: rgba(33, 150, 243, 0.9);;  
-    transform: translateY(100%);
-      
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%); 
+    transition: transform 250ms var(--time-function);
 }
 
-.project-list:hover .desc-list-text {
+.section-not:hover .desc-list-text {
     transform: translateY(0);
 }
 
@@ -689,7 +678,7 @@ background: #F5F4FA;;
 .section-not {
     display: block;
     overflow: hidden;
-    transition: transform 250ms var(--time-function);
+    transition: transform 250ms var(--time-function), box-shadow 250ms var(--time-function);
 }
 
 .section-not:hover,
@@ -727,6 +716,7 @@ background: #F5F4FA;;
     border-radius: 4px;
     border-style: none;
     cursor: pointer;
+    transition: background-color 250ms var(--time-function), color 250ms var(--time-function), box-shadow 250ms var(--time-function);
 }
 .section-projects {
     display: flex;
@@ -739,6 +729,18 @@ background: #F5F4FA;;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*   Модальне вікно   */
 
