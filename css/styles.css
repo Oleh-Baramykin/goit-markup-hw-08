@@ -624,8 +624,10 @@ background: #F5F4FA;;
 }
 
 .footer-links {
-    margin: 12px 0 40px 70px;
+    margin-top: 12px;
+    margin-left: 70px;
 }
+
 .footer-soc-links {
     display: flex;
 }
@@ -1033,8 +1035,11 @@ background: #F5F4FA;;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
     cursor: pointer;
+}
+
+.modal-checkbox {
+    margin-top: 20px;
 }
 
 .checkbox-input {
