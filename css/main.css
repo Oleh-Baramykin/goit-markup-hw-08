@@ -283,6 +283,10 @@ img {
   margin-right: 0;
 }
 
+.about {
+  padding-top: 0;
+}
+
 .title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -293,19 +297,19 @@ img {
   color: var(--main-color-font);
 }
 
-.title__list {
+.about__list {
   display: flex;
 }
 
-.title__list .title__img + .title__img {
+.about__list .about__img + .about__img {
   margin-left: 30px;
 }
 
-.title__img {
+.about__img {
   position: relative;
 }
 
-.title__box {
+.about__box {
   position: absolute;
   bottom: 0;
   display: flex;
@@ -316,14 +320,14 @@ img {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.title__text {
+.about__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .team__list {
@@ -449,7 +453,7 @@ img {
   fill: currentColor;
 }
 
-.clients {
+.clients__title {
   margin-bottom: 50px;
   font-family: "Roboto";
   font-style: normal;
