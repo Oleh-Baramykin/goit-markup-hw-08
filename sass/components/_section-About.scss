@@ -10,10 +10,16 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color-font);
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .about__list {
   display: flex;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .about__list .about__img + .about__img {
@@ -33,6 +39,9 @@
   width: 100%;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .about__text {
@@ -43,4 +52,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
