@@ -548,7 +548,6 @@ img {
 .footer-title {
   display: flex;
   flex-direction: column;
-  align-items: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -559,9 +558,19 @@ img {
   color: #ffffff;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1200px) {
+  .footer-title {
+    align-items: center;
+  }
+}
 
-.container-footer {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .footer__box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
 .footer-bloks {
@@ -569,12 +578,27 @@ img {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer-bloks {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
 
 .footer-size-block {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 231px;
+}
+@media screen and (max-width: 1200px) {
+  .footer-size-block {
+    align-items: center;
+  }
+}
+
+.footer {
+  padding: 60px 0;
+  background: #2f303a;
 }
 
 .contacts-list {
@@ -623,15 +647,30 @@ img {
 
 .contacts {
   font-style: normal;
-  text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  .contacts {
+    text-align: center;
+  }
 }
 
 .footer-links {
   margin-top: 60px;
 }
+@media screen and (min-width: 768px) {
+  .footer-links {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-links {
+    margin-left: 70px;
+  }
+}
 
 .footer-soc-links {
   display: flex;
+  justify-content: center;
 }
 
 .social-links-footer {
@@ -651,7 +690,6 @@ img {
 }
 
 .caption-form {
-  text-align: center;
   margin-bottom: 20px;
   font-family: "Roboto";
   font-style: normal;
@@ -662,18 +700,29 @@ img {
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (max-width: 1200px) {
+  .caption-form {
+    text-align: center;
+  }
+}
 
 .footer-form {
   margin-top: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    margin-left: 93px;
+    margin-top: 0;
+  }
+}
 
 .footer-btn {
+  width: 200px;
   padding: 0;
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
   height: 50px;
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -683,6 +732,12 @@ img {
 .footer-btn:hover, .footer-btn:focus {
   cursor: pointer;
   background-color: #188ce8;
+}
+@media screen and (min-width: 1200px) {
+  .footer-btn {
+    margin-left: 12px;
+    margin-top: 0;
+  }
 }
 
 .btn-text {
@@ -700,8 +755,8 @@ img {
 }
 
 .footer-input {
+  width: 100%;
   padding-left: 16px;
-  width: 450px;
   height: 50px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -727,11 +782,29 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (min-width: 480px) {
+  .footer-input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    width: 358px;
+  }
+}
 
 .footer-form-size {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form-size {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 
 .portfolio-buttons {

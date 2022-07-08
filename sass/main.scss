@@ -1,8 +1,7 @@
 @import './utils/vars';
 @import './utils/hidden';
 @import './utils/reset';
-
-
+@import './utils/mixins';
 
 @import './components/header';
 @import './components/section-Hero';
@@ -14,8 +13,3 @@
 @import './components/portfolio-buttons';
 @import './components/portfolio-card-list';
 @import './components/modal';
-
-
-
-
-

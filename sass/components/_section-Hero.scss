@@ -20,8 +20,8 @@
 }
 
 .hero__caption {
-  width: 360px;
-  height: 84px;
+  width: 100%;
+  height: auto;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 26px;
@@ -30,6 +30,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-bg-color);
+  @include mobile;
 }
 
 .hero__button {
