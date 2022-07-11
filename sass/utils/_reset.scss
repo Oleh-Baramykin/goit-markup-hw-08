@@ -41,7 +41,9 @@ img {
 }
 
 .section {
-  padding: 60px 0;
+  @media screen and (max-width: 1199px) {
+    padding: 60px 0;
+  }
   @include desktop {
     padding: 94px 0;
   }
