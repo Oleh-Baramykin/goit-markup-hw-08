@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="headers"> -->
-      <!-- <div class="container header-nav">
+    <header class="headers">
+      <div class="container header-nav">
         <nav class="header-nav">
           <a href="" class="logo"><span class="logo-web">Web</span>Studio</a>
           <ul class="header-list">
@@ -40,19 +40,73 @@
             >
           </li>
           <li class="list tel-size">
-            <a href="tel:+380961111111" class="header-mail link">
+            <a href="tel:+380961111111" class="header-tel link">
               <svg class="tel-logo" width="10" height="16">
                 <use href="./images/icons.svg (1).svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
-      </div> -->
+      </div>
+      <div class="mobil-header container">
+        <a href="" class="logo"><span class="logo-web">Web</span>Studio</a>
+        <button type="button" class="mobil-btn__open">
+          <svg class="mobil-svg__open" width="40" height="40">
+            <use href="./images/icons.svg (1).svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobil-menu is-hidden mobil-container">
+        <div>
+          <button type="button" class="mobil-btn__close">
+            <svg class="mobil-svg__close" width="40" height="40">
+              <use href="./images/icons.svg (1).svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <ul class="mobil-list">
+            <li class="mobil-list__item">
+              <a href="./index.html" class="mobil-list__link link">Студия</a>
+            </li>
+            <li class="mobil-list__item">
+              <a href=".//portfolio.html" class="mobil-list__link link">Портфолио</a>
+            </li>
+            <li class="mobil-list__item">
+              <a class="mobil-list__link link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="mobil-contacts">
+            <ll class="mobil-contacts__item">
+              <a href="tel:+380961111111" class="mobil-contacts__tel">+38 096 111 11 11</a>
+            </ll>
+            <ll class="mobil-contacts__item">
+              <a href="mailto:info@devstudio.com" class="mobil-contacts__mail"
+                >info@devstudio.com
+              </a>
+            </ll>
+          </ul>
+          <ul class="mobil-soc">
+            <li class="mobil-soc__item">
+              <a class="mobil-soc__link">Instagram</a>
+            </li>
+            <li class="mobil-soc__item">
+              <a class="mobil-soc__link">Twitter</a>
+            </li>
+            <li class="mobil-soc__item">
+              <a class="mobil-soc__link">Facebook</a>
+            </li>
+            <li class="mobil-soc__item">
+              <a class="mobil-soc__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <section class="section">
         <div class="container">
-          <!-- <ul class="portfolio-buttons">
+          <ul class="portfolio-buttons">
             <li class="portfolio-buttons__item link">
               <button type="button" class="portfolio-buttons__link">Все</button>
             </li>
@@ -68,13 +122,27 @@
             <li class="portfolio-buttons__item link">
               <button type="button" class="portfolio-buttons__link">Маркетинг</button>
             </li>
-          </ul> -->
+          </ul>
           <h1 class="visually-hidden">Примеры работ</h1>
           <ul class="cards">
             <li class="cards__body">
               <a href="" class="cards__link">
                 <div class="cards__content">
-                  <img src="./img/img.jpg" alt="ноутбук" weigh="370" heigh="294" />
+                  <picture>
+                    <source
+                      crcset="../img/card1desc.jpg 1x, ../img/card1desc-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      crcset="../img/card1tab.jpg 1x, ../img/card1tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      crcset="../img/card1.jpg 1x, ../img/card1-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./img/card1.jpg" alt="ноутбук" height="294" />
+                  </picture>
                   <p class="cards__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -87,10 +155,24 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="cards__body">
               <a href="" class="cards__link">
                 <div class="cards__content">
-                  <img src="./img/img-1.jpg" alt="баскетболисты" height="294" />
+                  <picture>
+                    <source
+                      crcset="../img/card2desc.jpg 1x, ../img/card2desc-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      crcset="../img/card2tab.jpg 1x, ../img/card2tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      crcset="../img/card2.jpg 1x, ../img/card2-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="../img/card2.jpg" alt="баскетболисты" height="294" />
+                  </picture>
                   <p class="cards__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -103,10 +185,24 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="cards__body">
               <a href="" class="cards__link">
                 <div class="cards__content">
-                  <img src="./img/img-2.jpg" alt="логотип ресторана" height="294" />
+                  <picture>
+                    <source
+                      crcset="../img/card3desc.jpg 1x, ../img/card3desc-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      crcset="../img/card3tab.jpg 1x, ../img/card3tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      crcset="../img/card3.jpg 1x, ../img/card3-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="../img/card3.jpg" alt="логотип ресторана" height="294" />
+                  </picture>
                   <p class="cards__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -121,10 +217,24 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="cards__body">
               <a href="" class="cards__link">
                 <div class="cards__content">
-                  <img src="./img/img-3.jpg" alt="наушники" height="294"/>
+                  <picture>
+                    <source
+                      crcset="../img/card4desc.jpg 1x, ../img/card4desc-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      crcset="../img/card4tab.jpg 1x, ../img/card4tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      crcset="../img/card4.jpg 1x, ../img/card4-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./img/card4.jpg" alt="наушники" height="294" />
+                  </picture>
                   <p class="cards__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -137,10 +247,24 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="cards__body">
               <a href="" class="cards__link">
                 <div class="cards__content">
-                  <img src="./img/img-4.jpg" alt="коробки"  height="294"/>
+                  <picture>
+                    <source
+                      crcset="../img/card5desc.jpg 1x, ../img/card5desc-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      crcset="../img/card5tab.jpg 1x, ../img/card5tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      crcset="../img/card5.jpg 1x, ../img/card5-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="../img/card5.jpg" alt="коробки" height="294" />
+                  </picture>
                   <p class="cards__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -153,10 +277,24 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="cards__body">
               <a href="" class="cards__link">
                 <div class="cards__content">
-                  <img src="./img/img-5.jpg" alt="монитор"  height="294"/>
+                  <picture>
+                    <source
+                      crcset="../img/card6desc.jpg 1x, ../img/card6desc-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      crcset="../img/card6tab.jpg 1x, ../img/card6tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      crcset="../img/card6.jpg 1x, ../img/card6-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./img/card6.jpg" alt="монитор" height="294" />
+                  </picture>
                   <p class="cards__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -169,10 +307,24 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="cards__body">
               <a href="" class="cards__link">
                 <div class="cards__content">
-                  <img src="./img/img-6.jpg" alt="книга"  height="294"/>
+                  <picture>
+                    <source
+                      crcset="../img/card7desc.jpg 1x, ../img/card7desc-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      crcset="../img/card7tab.jpg 1x, ../img/card7tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      crcset="../img/card7.jpg 1x, ../img/card7-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="../img/card7.jpg" alt="книга" height="294" />
+                  </picture>
                   <p class="cards__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -185,10 +337,24 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="cards__body">
               <a href="" class="cards__link">
                 <div class="cards__content">
-                  <img src="./img/img-7.jpg" alt="бирка" height="294"/>
+                  <picture>
+                    <source
+                      crcset="../img/card8desc.jpg 1x, ../img/card8desc-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      crcset="../img/card8tab.jpg 1x, ../img/card8tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      crcset="../img/card8.jpg 1x, ../img/card8-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="../img/card8.jpg" alt="бирка" height="294" />
+                  </picture>
                   <p class="cards__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -201,10 +367,24 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="cards__body">
               <a href="" class="cards__link">
                 <div class="cards__content">
-                  <img src="./img/img-8.jpg" alt="печатать на клавиатуре"  height="294"/>
+                  <picture>
+                    <source
+                      crcset="../img/card9desc.jpg 1x, ../img/card9desc-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      crcset="../img/card9tab.jpg 1x, ../img/card9tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      crcset="../img/card9.jpg 1x, ../img/card9-2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./img/img-8.jpg" alt="печатать на клавиатуре" height="294" />
+                  </picture>
                   <p class="cards__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -223,56 +403,58 @@
     </main>
     <footer class="footer">
       <div class="container footer-bloks">
-        <div class="footer-size-block">
-          <a href="" class="logo-link logo link">Web<span class="logo-footer">Studio</span></a>
-          <address class="address">
-            <ul class="contacts">
-              <li class="contacts-list-item list">
-                <a href="" class="contacts-list-item link">г. Киев, пр-т Леси Украинки, 26</a>
+        <div class="footer__box">
+          <div class="footer-size-block">
+            <a href="" class="logo-link logo link">Web<span class="logo-footer">Studio</span></a>
+            <address class="address">
+              <ul class="contacts">
+                <li class="contacts-list-item list">
+                  <a href="" class="contacts-list-item link">г. Киев, пр-т Леси Украинки, 26</a>
+                </li>
+                <li class="contacts-list list">
+                  <a href="mailto:info@devstudio.com" class="contacts-address link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="contacts-list list">
+                  <a href="tel:+380961111111" class="contacts-address link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-links">
+            <h3 class="footer-title">присоединяйтесь</h3>
+            <ul class="footer-soc-links">
+              <li class="social-links">
+                <a href="" class="social-links-footer">
+                  <svg class="social-links-ikon" width="20" height="20">
+                    <use href="./images/icons.svg (1).svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contacts-list list">
-                <a href="mailto:info@devstudio.com" class="contacts-address link"
-                  >info@devstudio.com</a
-                >
+              <li class="social-links">
+                <a href="" class="social-links-footer">
+                  <svg class="social-links-ikon" width="20" height="20">
+                    <use href="./images/icons.svg (1).svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contacts-list list">
-                <a href="tel:+380961111111" class="contacts-address link">+38 096 111 11 11</a>
+              <li class="social-links">
+                <a href="" class="social-links-footer">
+                  <svg class="social-links-ikon" width="20" height="20">
+                    <use href="./images/icons.svg (1).svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links">
+                <a href="" class="social-links-footer">
+                  <svg class="social-links-ikon" width="20" height="20">
+                    <use href="./images/icons.svg (1).svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-links">
-          <h3 class="footer-title">присоединяйтесь</h3>
-          <ul class="footer-soc-links">
-            <li class="social-links">
-              <a href="" class="social-links-footer">
-                <svg class="social-links-ikon" width="20" height="20">
-                  <use href="./images/icons.svg (1).svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-links">
-              <a href="" class="social-links-footer">
-                <svg class="social-links-ikon" width="20" height="20">
-                  <use href="./images/icons.svg (1).svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-links">
-              <a href="" class="social-links-footer">
-                <svg class="social-links-ikon" width="20" height="20">
-                  <use href="./images/icons.svg (1).svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-links">
-              <a href="" class="social-links-footer">
-                <svg class="social-links-ikon" width="20" height="20">
-                  <use href="./images/icons.svg (1).svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <form class="footer-form">
           <p class="caption-form">Подпишитесь на рассылку</p>
@@ -290,5 +472,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

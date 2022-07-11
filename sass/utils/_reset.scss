@@ -40,6 +40,13 @@ img {
   }
 }
 
+.section {
+  padding: 60px 0;
+  @include desktop {
+    padding: 94px 0;
+  }
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -54,8 +61,4 @@ img {
   @media screen and (min-width: 1200px) {
     min-width: 1200px;
   }
-}
-
-.section {
-  padding: 30px 0;
 }

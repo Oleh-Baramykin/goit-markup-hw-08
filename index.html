@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="headers">
+    <header class="headers">
       <div class="container header-nav">
         <nav class="header-nav">
           <a href="" class="logo"><span class="logo-web">Web</span>Studio</a>
@@ -38,7 +38,7 @@
             >
           </li>
           <li class="list tel-size">
-            <a href="tel:+380961111111" class="header-mail link">
+            <a href="tel:+380961111111" class="header-tel link">
               <svg class="tel-logo" width="10" height="16">
                 <use href="./images/icons.svg (1).svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
@@ -46,9 +46,63 @@
           </li>
         </ul>
       </div>
-    </header> -->
+      <div class="mobil-header container">
+        <a href="" class="logo"><span class="logo-web">Web</span>Studio</a>
+        <button type="button" class="mobil-btn__open">
+          <svg class="mobil-svg__open" width="40" height="40">
+            <use href="./images/icons.svg (1).svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobil-menu is-hidden mobil-container">
+        <div>
+          <button type="button" class="mobil-btn__close">
+            <svg class="mobil-svg__close" width="40" height="40">
+              <use href="./images/icons.svg (1).svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <ul class="mobil-list">
+            <li class="mobil-list__item">
+              <a href="./index.html" class="mobil-list__link link">Студия</a>
+            </li>
+            <li class="mobil-list__item">
+              <a href=".//portfolio.html" class="mobil-list__link link">Портфолио</a>
+            </li>
+            <li class="mobil-list__item">
+              <a class="mobil-list__link link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="mobil-contacts">
+            <ll class="mobil-contacts__item">
+              <a href="tel:+380961111111" class="mobil-contacts__tel">+38 096 111 11 11</a>
+            </ll>
+            <ll class="mobil-contacts__item">
+              <a href="mailto:info@devstudio.com" class="mobil-contacts__mail"
+                >info@devstudio.com
+              </a>
+            </ll>
+          </ul>
+          <ul class="mobil-soc">
+            <li class="mobil-soc__item">
+              <a class="mobil-soc__link">Instagram</a>
+            </li>
+            <li class="mobil-soc__item">
+              <a class="mobil-soc__link">Twitter</a>
+            </li>
+            <li class="mobil-soc__item">
+              <a class="mobil-soc__link">Facebook</a>
+            </li>
+            <li class="mobil-soc__item">
+              <a class="mobil-soc__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
-      <!-- герой -->
+      <!--герой-->
       <section class="section hero">
         <div class="container hero__size">
           <h1 class="hero__caption">Эффективные решения для вашего бизнеса</h1>
@@ -56,7 +110,7 @@
         </div>
       </section>
       <!-- преимущества-->
-      <section class="section">
+      <section class="section__benefits">
         <div class="container">
           <ul class="benefits">
             <li class="benefits__list list">
@@ -106,24 +160,47 @@
           </ul>
         </div>
       </section>
-      <section class="section about">
+      <section class="about">
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="about__list">
             <li class="about__img list">
-              <img src="./images/box-1.jpg" alt="печатать на клавиатуре" width="370" height="294" />
+              <picture>
+                <source
+                  crcset="../img/galery1.jpg 1x, ../img/galery1-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./img/galery1.jpg"
+                  alt="печатать на клавиатуре"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <div class="about__box">
                 <h3 class="about__text">Десктопные приложения</h3>
               </div>
             </li>
             <li class="about__img list">
-              <img src="./images/img-22.jpg" alt="ноутбук и телефон" width="370" height="294" />
+              <picture>
+                <source
+                  crcset="../img/galery2.jpg 1x, ../img/galery2-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="../img/galery2.jpg" alt="ноутбук и телефон" width="370" height="294" />
+              </picture>
               <div class="about__box">
                 <h3 class="about__text">Мобильные приложения</h3>
               </div>
             </li>
             <li class="about__img list">
-              <img src="./images/img-11.jpg" alt="планшет" width="370" height="294" />
+              <picture>
+                <source
+                  crcset="../img/galery3.jpg 1x, ../img/galery3-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="../img/galery3.jpg" alt="ноутбук и телефон" width="370" height="294" />
+              </picture>
               <div class="about__box">
                 <h3 class="about__text">Дизайнерские решения</h3>
               </div>
@@ -136,7 +213,21 @@
           <h2 class="team__name">Наша команда</h2>
           <ul class="team__list">
             <li class="team-member list">
-              <img src="./images/img-1.jpg" alt="сотрудник 1" width="270" />
+              <picture>
+                <source
+                  crcset="../img/team1desc.jpg 1x, ../img/team1desc-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  crcset="../img/team1tab.jpg 1x, ../img/team1tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  crcset="../img/team1.jpg 1x, ../img/team1-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img src="../img/team1.jpg" alt="сотрудник 1" width="270" />
+              </picture>
               <h3 class="team-member__name">Игорь Демьяненко</h3>
               <p class="team-member__prof">Product Designer</p>
               <ul class="team-member__list">
@@ -171,7 +262,21 @@
               </ul>
             </li>
             <li class="team-member list">
-              <img src="./images/img-2.jpg" alt="сотрудник 2" width="270" />
+              <picture>
+                <source
+                  crcset="../img/team2desc.jpg 1x, ../img/team2desc-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  crcset="../img/team2tab.jpg 1x, ../img/team2tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  crcset="../img/team2.jpg 1x, ../img/team2-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img src="../img/team2.jpg" alt="сотрудник 2" width="270" />
+              </picture>
               <h3 class="team-member__name">Ольга Репина</h3>
               <p class="team-member__prof">Frontend Developer</p>
               <ul class="team-member__list">
@@ -206,7 +311,21 @@
               </ul>
             </li>
             <li class="team-member list">
-              <img src="./images/img-3.jpg" alt="сотрудник 3" width="270" />
+              <picture>
+                <source
+                  crcset="../img/team3desc.jpg 1x, ../img/team3desc-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  crcset="../img/team3tab.jpg 1x, ../img/team3tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  crcset="../img/team3.jpg 1x, ../img/team3-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img src="../img/team3.jpg" alt="сотрудник 3" width="270" />
+              </picture>
               <h3 class="team-member__name">Николай Тарасов</h3>
               <p class="team-member__prof">Marketing</p>
               <ul class="team-member__list">
@@ -241,7 +360,21 @@
               </ul>
             </li>
             <li class="team-member list">
-              <img src="./images/img-4.jpg" alt="сотрудник 4" width="270" />
+              <picture>
+                <source
+                  crcset="../img/team4desc.jpg 1x, ../img/team4desc-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  crcset="../img/team4tab.jpg 1x, ../img/team4tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  crcset="../img/team4.jpg 1x, ../img/team4-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img src="../img/team4.jpg" alt="сотрудник 4" width="270" />
+              </picture>
               <h3 class="team-member__name">Михаил Ермаков</h3>
               <p class="team-member__prof">UI Designer</p>
               <ul class="team-member__list">
@@ -457,6 +590,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

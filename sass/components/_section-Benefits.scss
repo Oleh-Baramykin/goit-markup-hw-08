@@ -1,3 +1,10 @@
+.section__benefits {
+  padding-top: 60px;
+  @include desktop {
+    padding-top: 94px;
+  }
+}
+
 .benefits__list {
   width: 100%;
   &:last-child {
