@@ -30,10 +30,10 @@
     margin-left: 0;
   }
   width: calc((100% - 30px) / 2);
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: calc((100% - 60px) / 3);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: calc((100% - 150px) / 6);
   }
 }
@@ -44,17 +44,16 @@
 
 .clients__title {
   margin-bottom: 30px;
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
-  line-height: 33px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-bottom: 50px;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
   }
 }

@@ -9,8 +9,21 @@
   height: 100vh;
 }
 
+.mobil-header {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include tablet {
+    display: none;
+  }
+}
+
 .mobil-soc {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mobil-list {
@@ -27,7 +40,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 34px;
-  line-height: 40px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--accent-color);
@@ -37,7 +50,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #757575;
@@ -47,21 +60,10 @@
   margin-top: 32px;
 }
 
-.mobil-btn__open {
+.mobil-btn {
   display: block;
   margin-left: auto;
-  background-color: #fff;
-  border: none;
-  transition: color 250ms var(--time-function);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
-
-.mobil-btn__close {
-  display: block;
-  margin-left: auto;
+  padding: 0;
   background-color: #fff;
   border: none;
   transition: color 250ms var(--time-function);
@@ -79,7 +81,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
-  line-height: 47px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   transition: color 250ms var(--time-function);
   &:hover,
@@ -96,7 +98,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
@@ -105,14 +107,14 @@
   position: relative;
   &:not(:last-child) {
     margin-right: 20px;
-  }
-  &::after {
-    position: absolute;
-    content: '';
-    margin-left: 10px;
-    width: 1px;
-    height: 22px;
-    background-color: rgba(33, 33, 33, 0.2);
+    &::after {
+      position: absolute;
+      content: '';
+      margin-left: 10px;
+      width: 1px;
+      height: 22px;
+      background-color: rgba(33, 33, 33, 0.2);
+    }
   }
 }
 
@@ -122,4 +124,11 @@
   justify-content: space-between;
   height: 100%;
   overflow: auto;
+}
+
+.mobil-svg {
+  transition: fill 250ms --time-function;
+  &:hover {
+    fill: #2196f3;
+  }
 }
