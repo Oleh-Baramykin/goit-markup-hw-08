@@ -212,7 +212,7 @@
 
 .checkbox-input {
   display: inline-block;
-  display: none;
+  display: hidden;
   cursor: pointer;
   transition: color 250ms var(--time-function);
   &:checked + .svg-checkbox {

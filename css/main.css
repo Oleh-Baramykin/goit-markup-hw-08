@@ -328,9 +328,10 @@ img {
   padding: 0;
   background-color: #fff;
   border: none;
-  transition: color 250ms var(--time-function);
+  transition: transform 350ms var(--time-function), color 350ms var(--time-function);
 }
 .mobil-btn:hover, .mobil-btn:focus {
+  transform: rotate(180deg);
   color: var(--accent-color);
 }
 
@@ -345,9 +346,6 @@ img {
   line-height: 1.18;
   letter-spacing: 0.02em;
   transition: color 250ms var(--time-function);
-}
-.mobil-list__link:hover, .mobil-list__link:focus {
-  color: var(--accent-color);
 }
 
 .mobil-soc {
@@ -391,6 +389,10 @@ img {
 }
 .mobil-svg:hover {
   fill: #2196f3;
+}
+
+.mobil-list__link--color {
+  color: var(--accent-color);
 }
 
 .hero__size {
@@ -1415,7 +1417,7 @@ img {
 
 .checkbox-input {
   display: inline-block;
-  display: none;
+  display: hidden;
   cursor: pointer;
   transition: color 250ms var(--time-function);
 }
